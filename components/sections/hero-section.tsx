@@ -25,24 +25,24 @@ export default function HeroSection() {
       <div
         className={cn(
           'relative mx-auto flex min-h-screen max-w-7xl flex-col justify-center',
-          'pl-12 pr-6 md:pl-20 md:pr-8'
+          'pl-16 pr-6 md:pl-32 md:pr-8'
         )}
       >
         <motion.div
           initial={{ opacity: 0, filter: 'blur(12px)' }}
           animate={{ opacity: 1, filter: 'blur(0px)' }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
-          className="max-w-3xl pt-24"
+          className="max-w-3xl pt-48 sm:pt-48 max-sm:pt-56"
         >
-          <h1 className="text-5xl font-bold leading-[1.1] tracking-tight text-white md:text-6xl xl:text-7xl">
-            När människor växer, växer organisationer
+          <h1 className="text-4xl font-bold leading-[1.1] tracking-tight text-white md:text-5xl xl:text-6xl">
+            När människor växer,<br /> växer organisationer
           </h1>
           <p className="mt-6 max-w-xl text-lg text-white/70 md:text-xl">
             Zoey är er partner inom HR och Talent Acquisition. Vi hjälper
             organisationer att hitta, utveckla och behålla rätt kompetens.
           </p>
 
-          <div className="mt-10 flex flex-col items-start gap-4 sm:flex-row">
+          <div className="mt-10 flex flex-row items-start gap-4">
             <Button
               asChild
               size="lg"

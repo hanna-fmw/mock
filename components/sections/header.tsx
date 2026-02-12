@@ -89,7 +89,7 @@ export function Header() {
         <div
           className={cn(
             'mx-auto max-w-7xl transition-all duration-300',
-            scrolled ? horizontalPadding : 'pl-12 pr-0 md:pl-20 md:pr-0'
+            scrolled ? horizontalPadding : 'pl-16 pr-0 md:pl-32 md:pr-0'
           )}
         >
           <div className="relative flex flex-wrap items-center justify-between gap-6 py-4 lg:gap-0 lg:py-5">
