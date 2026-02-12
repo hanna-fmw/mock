@@ -1,7 +1,7 @@
 'use client'
 
 import { Button } from '@/components/ui/button'
-import { cn, horizontalPadding } from '@/lib/utils'
+import { cn } from '@/lib/utils'
 import { Menu, Moon, Sun, X } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import Link from 'next/link'
@@ -88,8 +88,7 @@ export function Header() {
       >
         <div
           className={cn(
-            'mx-auto max-w-7xl transition-all duration-300',
-            scrolled ? horizontalPadding : 'pl-16 pr-0 md:pl-32 md:pr-0'
+            'mx-auto max-w-7xl pl-16 pr-0 md:pl-32 md:pr-0 transition-all duration-300'
           )}
         >
           <div className="relative flex flex-wrap items-center justify-between gap-6 py-4 lg:gap-0 lg:py-5">
@@ -125,7 +124,7 @@ export function Header() {
             </div>
 
             {/* Desktop nav */}
-            <div className={cn('hidden lg:block', !scrolled && '-mr-32 md:-mr-48')}>
+            <div className="hidden lg:block -mr-32 md:-mr-48">
               <ul className="flex items-center gap-8 text-sm">
                 {menuItems.map((item) => (
                   <li key={item.href}>
