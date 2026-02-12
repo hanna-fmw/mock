@@ -58,7 +58,7 @@
  * Bold typography does the heavy lifting
  */
 :root {
-  --radius: 0.75rem;
+  --radius: 0rem;
   --surface-dark: oklch(0.145 0 0);
   --surface-dark-muted: oklch(0.145 0 0 / 50%);
   --background: oklch(1 0 0);

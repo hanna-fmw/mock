@@ -84,9 +84,9 @@ export default function BlogSection() {
             >
               <Link
                 href={post.href}
-                className="group flex h-full flex-col rounded-2xl border border-border p-6 transition-all duration-300 hover:border-foreground/20 hover:shadow-lg"
+                className="group flex h-full flex-col overflow-hidden border border-border transition-all duration-300 hover:border-foreground/20 hover:shadow-lg"
               >
-                <div className="relative mb-6 aspect-[16/10] w-full overflow-hidden rounded-lg bg-muted">
+                <div className="relative aspect-[16/10] w-full overflow-hidden bg-muted">
                   <Image
                     src={post.image}
                     alt={post.title}
@@ -95,18 +95,20 @@ export default function BlogSection() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                   />
                 </div>
-                <time className="text-sm text-muted-foreground">
-                  {formatDate(post.date)}
-                </time>
-                <h3 className="mt-2 text-lg font-semibold leading-snug tracking-tight">
-                  {post.title}
-                </h3>
-                <p className="mt-2 flex-1 text-sm text-muted-foreground">
-                  {post.excerpt}
-                </p>
-                <div className="mt-4 flex items-center gap-2 text-sm font-medium">
-                  <span>Läs mer</span>
-                  <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-1" />
+                <div className="flex flex-1 flex-col p-6">
+                  <time className="text-sm text-muted-foreground">
+                    {formatDate(post.date)}
+                  </time>
+                  <h3 className="mt-2 text-lg font-semibold leading-snug tracking-tight">
+                    {post.title}
+                  </h3>
+                  <p className="mt-2 flex-1 text-sm text-muted-foreground">
+                    {post.excerpt}
+                  </p>
+                  <div className="mt-4 flex items-center gap-2 text-sm font-medium">
+                    <span>Läs mer</span>
+                    <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-1" />
+                  </div>
                 </div>
               </Link>
             </motion.article>
