@@ -30,18 +30,18 @@ export default function PhilosophySection() {
           whileInView={{ opacity: 1, filter: 'blur(0px)' }}
           viewport={{ once: true, margin: '0px 0px -100px 0px' }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
-          className="text-center"
+          className="text-left"
         >
           <h2 className="text-3xl font-bold tracking-tight text-cream-foreground md:text-4xl lg:text-5xl">
             Vi har en filosofi
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-cream-foreground/70">
+          <p className="mt-4 max-w-2xl text-lg text-cream-foreground/70">
             En förändringsresa behöver en tydlig karta, men framförallt en
             motiverad besättning.
           </p>
         </motion.div>
 
-        <div className="mt-16 grid gap-8 md:grid-cols-3">
+        <div className="mt-16 grid gap-8 md:gap-0 md:grid-cols-3">
           {values.map((value, index) => (
             <motion.div
               key={value.title}
@@ -53,7 +53,7 @@ export default function PhilosophySection() {
                 ease: 'easeOut',
                 delay: index * 0.15,
               }}
-              className="text-center"
+              className={`text-left border-l border-cream-foreground/15 px-8 ${index > 0 ? 'md:border-l' : 'md:border-l-0 md:pl-0'}`}
             >
               <h3 className="text-2xl font-semibold tracking-tight text-cream-foreground md:text-3xl">
                 {value.title}
