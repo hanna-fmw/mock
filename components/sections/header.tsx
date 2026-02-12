@@ -84,7 +84,7 @@ export function Header() {
         className={cn(
           'fixed z-20 w-full border-b border-transparent',
           'transition-all duration-300',
-          scrolled && 'border-border/50 bg-background/80 backdrop-blur-lg'
+          scrolled && 'border-border/30 bg-background/50 backdrop-blur-md'
         )}
       >
         <div
