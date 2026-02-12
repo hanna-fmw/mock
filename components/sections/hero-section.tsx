@@ -49,7 +49,7 @@ export default function HeroSection() {
               className="bg-white text-black hover:bg-white/90"
             >
               <Link href="#tjanster">
-                <span className="text-nowrap">Våra tjänster</span>
+                <span className="text-nowrap">För företag</span>
               </Link>
             </Button>
             <Button
@@ -59,7 +59,7 @@ export default function HeroSection() {
               className="border-white/20 bg-transparent text-white hover:bg-white/10"
             >
               <Link href="#kontakt">
-                <span className="text-nowrap">Kontakta oss</span>
+                <span className="text-nowrap">För konsulter</span>
               </Link>
             </Button>
           </div>

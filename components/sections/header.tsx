@@ -10,9 +10,8 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 const menuItems = [
   { name: 'Om Zoey', href: '#om-zoey' },
   { name: 'Tjänster', href: '#tjanster' },
-  { name: 'Filosofi', href: '#filosofi' },
   { name: 'Zoey Hub', href: '#zoey-hub' },
-  { name: 'Kontakt', href: '#kontakt' },
+  { name: 'Lediga jobb', href: '#lediga-jobb' },
 ]
 
 export function Header() {
